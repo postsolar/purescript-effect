@@ -32,8 +32,9 @@
   (define whileE
     (lambda (f)
       (lambda (a)
-        (do () ((not (f)))
-          (a))))))
+        (lambda ()
+          (do () ((not (f)))
+            (a))))))
 
   (define forE
     (lambda (lo)
