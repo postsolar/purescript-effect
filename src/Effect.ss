@@ -7,7 +7,7 @@
           whileE
           forE
           foreachE)
-  (import (only (rnrs base) define lambda error quote)
+  (import (only (rnrs base) define lambda quote)
           (only (rnrs arithmetic fixnums) fx+ fx>=?)
           (only (rnrs control) do)
           (prefix (purs runtime srfi :214) srfi:214:))

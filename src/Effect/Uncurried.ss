@@ -21,7 +21,7 @@
           runEffectFn8
           runEffectFn9
           runEffectFn10)
-  (import (only (rnrs base) define lambda error))
+  (import (only (rnrs base) define lambda))
 
    (define mkEffectFn1
      (lambda (fn)
