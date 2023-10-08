@@ -26,13 +26,14 @@
   (define untilE
     (lambda (f)
       (lambda ()
-        (error #f "Effect:untilE not implemented"))))
+        (do () ((f))
+          '()))))
 
   (define whileE
     (lambda (f)
       (lambda (a)
-        (lambda ()
-          (error #f "Effect:whileE not implemented.")))))
+        (do () ((not (f)))
+          (a))))))
 
   (define forE
     (lambda (lo)

@@ -6,6 +6,6 @@
 
   (define unsafePerformEffect
     (lambda (f)
-      (error #f "Effect.Unsafe:unsafePerformeffect not implemented.")))
+      (f)))
 
 )
